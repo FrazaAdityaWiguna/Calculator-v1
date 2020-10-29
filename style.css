@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #ffa600;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 1100px;
+    height: 550px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(/img/FrazaWp.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator {
+    width: 320px;
+    height: 520px;
+    background-color: #e4e1e1;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 0 25px 10px #ffa900;
+}
+
+#result {
+    height: 120px;
+    text-align: right;
+}
+
+#history {
+    height: 20px;
+    margin: 0 20px;
+    padding: 20px 0;
+    font-size: 15px;
+    color: #919191;
+}
+
+#output {
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+
+#keyboard {
+    height: 400px;
+}
+
+.operator,
+.number,
+.empty {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.empty {
+    background-color: #e4e1e1;
+}
+
+.number,
+.operator {
+    cursor: pointer;
+}
+
+.number:active,
+.operator:active {
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+.number:focus,
+.operator:focus,
+.empty:focus {
+    outline: 0;
+}
+
+button:nth-child(4) {
+    font-size: 20px;
+    background-color: chartreuse;
+}
+
+button:nth-child(8) {
+    font-size: 20px;
+    background-color: crimson;
+}
+
+button:nth-child(12) {
+    font-size: 20px;
+    background-color: fuchsia;
+}
+
+button:nth-child(16) {
+    font-size: 20px;
+    background-color: gold;
+}
+
+button:nth-child(20) {
+    font-size: 20px;
+    background-color: slateblue;
+}
